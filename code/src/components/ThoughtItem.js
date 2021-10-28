@@ -4,7 +4,6 @@ import "./thoughtItem.css";
 import moment from "moment";
 
 const ThoughtItem = ({ thought, onLinkesIncrease }) => {
-  //Props
   return (
     <div className="item-container">
       <p className="thought-input">{thought.message}</p>
