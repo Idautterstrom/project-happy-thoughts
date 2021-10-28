@@ -6,15 +6,19 @@ import moment from "moment";
 const ThoughtItem = ({ thought, onLinkesIncrease }) => {
   //Props
   return (
-    <div>
-      <p>{thought.message}</p>
-      <button onClick={() => onLinkesIncrease(thought._id)}>
+    <div className="item-container">
+      <p className="thought-input">{thought.message}</p>
+      <button
+        onClick={() => onLinkesIncrease(thought._id)}
+        className="likes-button"
+      >
         {" "}
-        &hearts; {thought.hearts}
+        <div className="button-container">
+          <p className="heart">&#10084;&#65039;</p>{" "}
+          <p className="likes-amount">x {thought.hearts}</p>
+        </div>
       </button>
-      <p className="date">
-        - Created at: {moment(thought.createdAt).fromNow()}
-      </p>
+      <p className="date">{moment(thought.createdAt).fromNow()}</p>
     </div>
   );
 };

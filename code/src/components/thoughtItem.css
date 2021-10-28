@@ -1,0 +1,48 @@
+.item-container {
+  background-color: #f2f0f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 60%;
+  padding: 10px 20px 10px 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-color: black;
+  border: 10px;
+  font-weight: bold;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0 0 black;
+}
+
+.thought-input {
+  grid-column: span 2;
+}
+
+.likes-button {
+  border: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.heart {
+  background-color: #ffacad;
+  padding: 10px;
+  width: 25px;
+  border-radius: 2em;
+}
+
+.likes-amount {
+  display: grid;
+  align-items: center;
+  color: rgb(206, 204, 204);
+  font-weight: bold;
+}
+
+.date {
+  color: rgb(206, 204, 204);
+  text-align: right;
+}
