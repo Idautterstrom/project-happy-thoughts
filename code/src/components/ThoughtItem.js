@@ -1,4 +1,5 @@
 import React from "react";
+import "./thoughtItem.css";
 
 import moment from "moment";
 

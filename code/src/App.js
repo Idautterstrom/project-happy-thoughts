@@ -12,7 +12,7 @@ export const App = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchThoughts();
+    fetchThoughts(); 
   }, []);
 
   const fetchThoughts = () => {
