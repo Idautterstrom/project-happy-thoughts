@@ -9,13 +9,14 @@
   margin-top: 30px;
   border-color: black;
   border: 10px;
-  font-weight: bold;
   border: 2px solid black;
   box-shadow: 10px 10px 0 0 black;
 }
 
 .thought-input {
   grid-column: span 2;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .likes-button {
@@ -45,4 +46,6 @@
 .date {
   color: rgb(206, 204, 204);
   text-align: right;
+  display: grid;
+  align-items: center;
 }
