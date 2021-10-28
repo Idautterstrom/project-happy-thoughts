@@ -12,7 +12,7 @@ export const App = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchThoughts(); 
+    fetchThoughts();
   }, []);
 
   const fetchThoughts = () => {
@@ -61,13 +61,15 @@ export const App = () => {
         setNewThought={setNewThought}
       />
 
-      {thoughts.map((thought) => (
-        <ThoughtItem
-          key={thought._id}
-          thought={thought}
-          onLinkesIncrease={handleLinkesIncrease}
-        />
-      ))}
+      <div className="container">
+        {thoughts.map((thought) => (
+          <ThoughtItem
+            key={thought._id}
+            thought={thought}
+            onLinkesIncrease={handleLinkesIncrease}
+          />
+        ))}
+      </div>
     </div>
   );
 };

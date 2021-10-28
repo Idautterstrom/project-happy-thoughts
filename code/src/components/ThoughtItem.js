@@ -6,7 +6,6 @@ import moment from "moment";
 const ThoughtItem = ({ thought, onLinkesIncrease }) => {
   //Props
   return (
-    <div className="container">
     <div className="item-container">
       <p className="thought-input">{thought.message}</p>
       <button
@@ -21,7 +20,6 @@ const ThoughtItem = ({ thought, onLinkesIncrease }) => {
       </button>
       <p className="date">{moment(thought.createdAt).fromNow()}</p>
     </div>
-  </div>
   );
 };
 
